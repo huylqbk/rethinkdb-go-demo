@@ -56,7 +56,7 @@ func NewServer(addr string) *http.Server {
 }
 
 func StartServer(server *http.Server) {
-	log.Println("Starting server")
+	log.Println("Starting server at http://localhost:3000")
 	err := server.ListenAndServe()
 	if err != nil {
 		log.Fatalln("Error: %v", err)
